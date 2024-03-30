@@ -1,0 +1,384 @@
+body {
+  background-color: rgb(251, 249, 241);
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+
+#header {
+  background-color: rgb(170, 215, 217);
+  color: white;
+  padding: 8px;
+  display: flex;
+  width: 15%;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  z-index: 1000;
+  margin-right: 2%;
+}
+
+.error-message {
+  color: red;
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+#logo {
+  margin-top: 1.3rem;
+  margin-left: 1.3rem;
+  width: 8rem;
+  height: 6rem;
+  margin-bottom: 10px;
+}
+
+
+.space-between{
+  justify-content: space-between;
+}
+#line {
+  margin-top: -1rem;
+  width: 14rem;
+}
+
+#header-text {
+  margin-top: 1rem;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  font-family: Georgia;
+}
+
+#user-question {
+  resize: none;
+  margin-bottom: 1rem;
+  height: 6.25rem;
+  border-color: rgb(245, 241, 226);
+  background-color: rgb(245, 241, 226);
+  border-radius: 0.9rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  color: rgb(51, 51, 51);
+  width: 100%;
+}
+
+#user-input {
+  resize: none;
+  height: 26.875rem;
+  border-color: rgb(245, 241, 226);
+  background-color: rgb(245, 241, 226);
+  border-radius: 0.9rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  color: rgb(51, 51, 51);
+  width: 100%;
+}
+
+#uploadBtn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+form {
+  /* margin-left: -2rem; */
+  width: 100%;
+  flex-direction: column;
+}
+
+.left-panel {
+  width: 60%;
+}
+
+.right-panel {
+  margin-top: 9rem;
+  width: 25%;
+  flex-direction: column;
+  margin-left: 62px;
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+}
+
+h1 {
+  margin-left: 17rem;
+  font-family: monospace;
+  margin-bottom: 6rem;
+}
+
+#submitBtn {
+  background-color: rgb(117, 179, 188);
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.625rem 0.9375rem;
+  cursor: pointer;
+  /* margin-left: 4rem; */
+  width: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+#submitBtn:hover {
+  background-color: rgb(108, 165, 173);
+}
+
+.frame {
+  flex: 1 1 0%;
+  margin-left: 300px;
+}
+
+.spinner {
+  border-width: 1rem;
+  border-style: solid;
+  border-color: rgb(52, 152, 219) rgb(243, 243, 243) rgb(243, 243, 243);
+  border-image: initial;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  animation: 2s linear 0s infinite normal none running spin;
+  margin-left: 5rem;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.small-spinner {
+  border-width: 0.125rem;
+  border-style: solid;
+  border-color: rgb(0, 0, 0) rgb(255, 255, 255) rgb(255, 255, 255);
+  border-image: initial;
+  border-radius: 50%;
+  width: 0.625rem;
+  height: 0.625rem;
+  animation: 1s linear 0s infinite normal none running spin;
+  margin-left: 0.3125rem;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+#foot {
+  margin-left: 6.875rem;
+}
+
+.error-word {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.error-word:hover {
+  background-color: rgb(255, 230, 230);
+}
+
+.error-message {
+  color: red;
+  display: none;
+}
+
+#model {
+  border: 0.0625rem solid rgb(245, 241, 226);
+  border-radius: 0.9rem;
+  padding: 1.25rem;
+  background-color: rgb(245, 241, 226);
+  min-height: 6.25rem;
+  overflow-wrap: break-word;
+  width: 99%;
+  margin-bottom: 0.625rem;
+}
+
+#sg {
+  border: 0.0625rem solid rgb(245, 241, 226);
+  border-radius: 0.9rem;
+  padding: 1.25rem;
+  background-color: rgb(245, 241, 226);
+  min-height: 6.25rem;
+  overflow-wrap: break-word;
+  width: 99%;
+  margin-top: 0.625rem;
+}
+
+#model-answer-btn {
+  background-color: rgb(117, 179, 188);
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.625rem 0.9375rem;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-bottom: 0.625rem;
+  width: 10rem;
+}
+
+#get_suggestion {
+  background-color: rgb(117, 179, 188);
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.625rem 0.9375rem;
+  cursor: pointer;
+  width: 10rem;
+  align-self: flex-start;
+  margin-top: 1.25rem;
+}
+
+#get_suggestion:hover {
+  background-color: rgb(108, 165, 173);
+}
+
+#model-answer-btn:hover {
+  background-color: rgb(108, 165, 173);
+}
+
+#resetBtn {
+  /* margin-left: 11.5rem; */
+  background-color: rgb(229, 57, 53);
+  margin-left: -9rem;
+  color: white;
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 0.625rem 0.9375rem;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+#resetBtn:hover {
+  background-color: rgb(198, 40, 40);
+}
+
+#result {
+  margin-top: 1.875rem;
+  padding: 1.25rem;
+  min-height: 5rem;
+  overflow-wrap: break-word;
+  width: 20rem;
+  margin-bottom: 0.625rem;
+  margin-left: -4.8rem;
+}
+
+#word-count {
+  margin-top: -1rem;
+  margin-left: -1rem;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+#overall-score-box {
+  /* margin-left: 7rem; */
+  margin-left: 1rem;
+  font-family: monospace;
+}
+
+#overall-score {
+  font-size: 5.375rem;
+  margin-left: 0rem;
+  margin-top: -0.4rem;
+  margin-bottom: 1.6rem;
+}
+.hidden {
+  display: none;
+}
+
+
+#foot {
+  margin-left: 10rem;
+}
+
+#error-box {
+  margin-bottom: 2rem;
+}
+
+#contact{
+  background-color: rgb(117, 179, 188);
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.925rem 0.9375rem;
+  cursor: pointer;
+  width: 86%;
+  text-decoration: none; /* Remove underline */
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  margin-top: 0.8rem;
+}
+#check{
+  background-color: rgb(117, 179, 188);
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.925rem 0.9375rem;
+  cursor: pointer;
+  width: 86%;
+  text-decoration: none; /* Remove underline */
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  margin-top: 0.2rem;
+}
+
+@media screen and (max-width:992px) {
+  .sections{
+    flex-direction: column;
+  }
+
+.p-4{
+  padding: 4%;
+}
+
+  .mytext{
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .left-panel{
+    width: 100%;
+  }
+
+  .right-panel{
+    width: 100%;
+    margin-left: 6rem;
+    margin-top: 1.3rem;
+  }
+
+  #resetBtn{
+    margin-left: -13rem;
+  }
+
+#header{
+width: 100%;
+margin-right: 0;
+}
+
+body{
+  flex-direction: column;
+}
+
+h1{
+  margin-left: 0;
+}
+
+}
